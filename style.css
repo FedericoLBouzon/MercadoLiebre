@@ -1,0 +1,275 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  header {
+    background-color: #fbbc02;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    width: 180px;
+    transition: width 0.2s ease-in;
+  }
+  
+  .logo:hover {
+    width: 250px;
+  
+  }
+  
+  #div2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  #div3 {
+    margin-left: 20px;
+  }
+  
+  .a1 {
+    text-decoration: none !important;
+    color: black !important;
+    margin-right: 20px;
+    transition: color 0.2s ease-in;
+  }
+  
+  .a1:hover {
+    color: #D6F6DD !important;
+    font-size: 20px;
+  }
+  
+  .a2, .a3, .a4 {
+    text-decoration: none !important;
+    color: black !important;
+    margin-right: 10px;
+  }
+  
+  .a3:hover, .a4:hover {
+    color: #393D3F !important;
+  }
+  
+  /* Banner */
+  .banner {
+    width: 100%;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Títulos */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Carousel */
+  #carouselExampleControls {
+    margin-bottom: 20px;
+  }
+  
+  /* Productos */
+  .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .producto1, .producto2, .producto3, .producto4 {
+    width: 22%;
+    margin: 10px;
+    border: 1px solid grey !important;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .producto1 img, .producto2 img, .producto3 img, .producto4 img {
+    width: 100%;
+  }
+  
+  .producto1 button, .producto2 button, .producto3 button, .producto4 button {
+    margin-top: 10px;
+  }
+  
+  .producto1 p, .producto2 p, .producto3 p, .producto4 p {
+    margin-top: 10px;
+  }
+  
+  /* Productos destacados */
+  .destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .destacado1, .destacado2 {
+    width: 45%;
+    border: 1px solid grey !important;
+    border-radius: 3%;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .destacado1 img, .destacado2 img {
+    width: 100%;
+  }
+  
+  h5 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Formulario modal */
+  #exampleModal {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  form {
+    background-color: white;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 3%;
+  }
+  
+  .logo2 {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  h4 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .registros {
+    margin-top: 20px;
+  }
+  
+  .nombre, .email, .contraseña {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .input1, .input2, .input3 {
+    border-radius: 3%;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .enviar {
+    background-color: #420DA3;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Factura */
+  #factura {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #A7CECB !important;
+    border-radius: 3%;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #fbbc02;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer h3 {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Media queries para dispositivos móviles */
+  @media (max-width: 1200px) {
+    header {
+      padding: 0 10px;
+    }
+  
+    #div2 {
+      margin-left: 10px;
+    }
+  
+    .boton {
+      width: 50%;
+    }
+  }
+  
+ /* En el media query para dispositivos móviles */
+/* En el media query para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px; /* Ajusta el espaciado como desees */
+    }
+    
+  
+    .logo {
+      width: 80px; /* Reducir el tamaño del logo */
+      order: 2; /* Cambia el orden para que el logo esté a la derecha */
+    }
+  
+    .a1 {
+      font-size: 8px; /* Reduce el tamaño de fuente para "CREADOR" */
+      margin-top: 10px; /* Ajusta el espaciado superior */
+      order: 1; /* Cambia el orden para que "CREADOR" esté a la izquierda */
+    }
+  
+    #div2 {
+      margin-left: 0;
+      margin-top: 10px;
+      justify-content: center;
+    }
+  
+    .producto1, .producto2, .producto3, .producto4 {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .destacados {
+      flex-direction: column;
+    }
+  
+    .destacado1, .destacado2 {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    h5 {
+      font-size: 14px;
+    }
+  }
+  
+  
+  
